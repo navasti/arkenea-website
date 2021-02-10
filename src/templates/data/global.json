@@ -1,0 +1,58 @@
+{
+  "title": "Arkenea - Technical Cofounders",
+  "static": "./static/",
+  "navItems": [
+    {
+      "label": "Portfolio",
+      "href": "#"
+    },
+    {
+      "label": "About",
+      "href": "#"
+    },
+    {
+      "label": "Pricing",
+      "href": "#"
+    },
+    {
+      "label": "Careers",
+      "href": "#"
+    },
+    {
+      "label": "Blog",
+      "href": "#"
+    },
+    {
+      "label": "Get a quote",
+      "href": "#"
+    }
+  ],
+  "cards": [
+    {
+      "image": "./static/img/stories-image-01.png",
+      "description": "Sleep Easli downloaded over 400,000 times - generating consistent revenues."
+    },
+    {
+      "image": "./static/img/stories-image-02.png",
+      "description": "Cansly feautred on TechCrunch and winner of the Kiip Build Fund 2013 and Mom's Choice Awards"
+    },
+    {
+      "image": "./static/img/stories-image-03.png",
+      "description": "Glenn Harrold, celebrity hypnotherapist, crosses 2 million downloads for his apps."
+    }
+  ],
+  "contactInformation": [
+    {
+      "heading": "Address",
+      "content": "Arkenea LLC 47 S 2nd #152,<br> San Jose, CA 95113, USA."
+    },
+    {
+      "heading": "Phone",
+      "content": "(428) 350-1761"
+    },
+    {
+      "heading": "Email",
+      "content": "contact@arkenea.com"
+    }
+  ]
+}
