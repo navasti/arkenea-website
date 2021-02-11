@@ -1,0 +1,57 @@
+.c-nav {
+  height: 100%;
+}
+
+.c-nav__list {
+  @include reset-list;
+  @include flexCenter;
+
+  height: 100%;
+  margin: 0;
+
+  flex-direction: column;
+
+  @include media(">=t-m") {
+    flex-direction: row;
+  }
+}
+
+.c-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  @include media(">=t-m") {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.c-nav__label {
+  padding: 1rem;
+
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+
+  @include media(">=m-s") {
+    font-size: 2rem;
+  }
+
+  @include media(">=m") {
+    font-size: 2.2rem;
+  }
+
+  @include media(">=t-m") {
+    font-size: 1.8rem;
+  }
+
+  @include media(">=t") {
+    font-size: 2rem;
+  }
+
+  @include media(">=l") {
+    font-size: 2.1rem;
+  }
+}

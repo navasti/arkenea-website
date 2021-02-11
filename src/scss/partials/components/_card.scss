@@ -1,0 +1,27 @@
+.c-card {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  @include media(">=m-s") {
+    width: 80%;
+  }
+
+  @include media(">=m") {
+    width: 70%;
+  }
+
+  @include media(">=t-m") {
+    flex-basis: 32%;
+    margin: 0;
+  }
+}

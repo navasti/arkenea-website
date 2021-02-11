@@ -1,0 +1,55 @@
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  box-shadow: none;
+  -webkit-appearance: none;
+
+  resize: none;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-gray;
+  }
+
+  @include media(">=t-m") {
+    border: 1px solid transparent;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+*::-ms-clear {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  opacity: 1;
+}

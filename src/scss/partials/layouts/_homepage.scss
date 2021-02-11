@@ -1,0 +1,15 @@
+.l-homepage {
+  height: 100vh;
+  margin-bottom: 5rem;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  color: $color-white;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../../../static/img/hero.png");
+  background-position: 50% 0;
+  background-size: cover;
+}

@@ -1,0 +1,43 @@
+.l-sec-stories__separator {
+  margin: 2.5rem auto 3rem auto;
+  width: 31rem;
+  height: 0.1rem;
+
+  background-color: rgba($color-gray, 0.6);
+
+  @include media(">=m-s") {
+    width: 36rem;
+  }
+
+  @include media(">=m") {
+    width: 42rem;
+  }
+
+  @include media(">=t-m") {
+    width: 5rem;
+    margin: 2.5rem 0 3rem 0;
+  }
+
+  @include media(">=t") {
+    width: 6rem;
+    margin: 3.5rem 0 4rem 0;
+  }
+
+  @include media(">=l") {
+    margin: 4.5rem 0 5rem 0;
+  }
+}
+
+.l-sec-stories__cards {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  @include media(">=t-m") {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

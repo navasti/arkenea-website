@@ -1,0 +1,64 @@
+/* Colors
+========================================================================== */
+$color-white: #fff;
+$color-black: #000000;
+$color-gray: #313131;
+$color-red: #dc4e58;
+$color-pink: #f88196;
+
+$btn-primary-color: #f7564b;
+
+$scotch-colors: (
+  "black": (
+    $color-black,
+  ),
+  "white": (
+    $color-white,
+  ),
+  "gray": (
+    $color-gray,
+  ),
+  "pink": (
+    $color-pink,
+  ),
+);
+
+/* Fonts
+========================================================================== */
+$font-raleway: "Montserrat", sans-serif;
+$font-logo: "Arkhip";
+
+$font-normal: $font-raleway, Arial, sans-serif;
+
+/* Animations
+========================================================================== */
+$transition-speed: 200ms;
+
+/* Sizes
+========================================================================== */
+$base-gap: 0.5rem;
+$gutter: 10px;
+$radius: 0.4rem;
+
+$size-inner: 1300px + ($gutter * 2);
+
+/* Breakpoints
+========================================================================== */
+$breakpoint-laptop: 1620px;
+$breakpoint-laptop-small: 1280px;
+$breakpoint-tablet: 1200px;
+$breakpoint-tablet-middle: 980px;
+$breakpoint-mobile: 670px;
+$breakpoint-mobile-small: 480px;
+$breakpoint-mobile-thin: 370px;
+$max-breakpoint: 1920;
+
+$breakpoints: (
+  l: $breakpoint-laptop,
+  l-s: $breakpoint-laptop-small,
+  t: $breakpoint-tablet,
+  t-m: $breakpoint-tablet-middle,
+  m: $breakpoint-mobile,
+  m-s: $breakpoint-mobile-small,
+  m-t: $breakpoint-mobile-thin,
+);

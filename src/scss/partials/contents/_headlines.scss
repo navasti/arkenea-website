@@ -1,0 +1,196 @@
+/* Header
+========================================================================== */
+.t-header {
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .t-head:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  @include media(">=m") {
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+
+    .t-head:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  @include media(">=t-m") {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    .t-head:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include media(">=l") {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    .t-head:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+/* Head
+   ========================================================================== */
+.t-head {
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+/* H1
+   ========================================================================== */
+
+.t-head--h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+
+  @include media(">=m-s") {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+
+  @include media(">=m") {
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+  }
+
+  @include media(">=t-m") {
+    font-size: 4.2rem;
+  }
+
+  @include media(">=t") {
+    font-size: 5rem;
+  }
+
+  @include media(">=l") {
+    font-size: 5.8rem;
+  }
+}
+
+/* H2
+   ========================================================================== */
+
+.t-head--h2 {
+  font-size: 2.2rem;
+  text-align: center;
+
+  @include media(">=m-s") {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+  }
+
+  @include media(">=m") {
+    font-size: 3rem;
+  }
+
+  @include media(">=t-m") {
+    text-align: left;
+
+    margin-bottom: 0;
+  }
+
+  @include media(">=t") {
+    font-size: 3.2rem;
+  }
+
+  @include media(">=l") {
+    font-size: 3.5rem;
+  }
+}
+
+/* H3
+   ========================================================================== */
+
+.t-head--h3 {
+  color: rgba($color-black, 0.65);
+
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 900;
+
+  @include media(">=m-s") {
+    font-size: 2.5rem;
+  }
+
+  @include media(">=m") {
+    font-size: 2.9rem;
+  }
+
+  @include media(">=t") {
+    font-size: 3.1rem;
+  }
+
+  @include media(">=l") {
+    font-size: 3.4rem;
+  }
+}
+
+/* H4
+   ========================================================================== */
+
+.t-head--h4 {
+  color: rgba($color-gray, 0.7);
+
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  margin-bottom: 1rem;
+
+  @include media(">=m-s") {
+    font-size: 2.2rem;
+  }
+
+  @include media(">=m") {
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+  }
+
+  @include media(">=t") {
+    font-size: 2.8rem;
+  }
+
+  @include media(">=l") {
+    font-size: 3.4rem;
+  }
+}
+
+/* H5
+   ========================================================================== */
+
+.t-head--h5 {
+  color: rgba($color-gray, 0.8);
+
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+
+  @include media(">=m-s") {
+    font-size: 2.2rem;
+  }
+
+  @include media(">=m") {
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+  }
+
+  @include media(">=t-m") {
+    text-align: right;
+  }
+
+  @include media(">=t") {
+    font-size: 2.8rem;
+  }
+}

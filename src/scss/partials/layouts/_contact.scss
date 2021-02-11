@@ -1,0 +1,33 @@
+.l-sec-contact__inner {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.l-sec-contact__details {
+  display: flex;
+
+  flex-direction: column;
+
+  @include media(">=t-m") {
+    margin-top: 6rem;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.l-sec-contact__form {
+  margin: 4rem 0;
+
+  @include media(">=m") {
+    margin: 5rem 0;
+  }
+
+  @include media(">=t-m") {
+    margin: 0;
+  }
+}

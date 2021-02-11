@@ -1,0 +1,31 @@
+/* Base
+   ========================================================================== */
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  min-width: 320px;
+
+  font-family: $font-normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+
+  color: $color-black;
+}
+
+/* Global Typography
+   ========================================================================== */
+a {
+  text-decoration: none;
+
+  color: inherit;
+
+  transition: opacity $transition-speed ease-in-out,
+    color $transition-speed ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

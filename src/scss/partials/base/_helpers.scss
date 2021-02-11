@@ -1,0 +1,26 @@
+@mixin reset-list {
+  padding: 0;
+  margin-left: 0;
+
+  list-style: none;
+
+  & > li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin flexCenter {
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+}

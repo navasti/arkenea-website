@@ -1,0 +1,162 @@
+.c-btn {
+  position: relative;
+  vertical-align: middle;
+
+  display: inline-block;
+
+  border: 0;
+
+  background: none;
+
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+
+    cursor: default;
+  }
+}
+
+.c-btn input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.c-btn__wrap {
+  @include flexCenter;
+
+  height: 100%;
+}
+
+.c-btn__ico {
+  font-size: 0;
+
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+/* Primary
+========================================================================== */
+.c-btn--primary {
+  background-color: $btn-primary-color;
+  color: #fff;
+
+  font-size: 1.6rem;
+
+  border: none;
+
+  padding: 0.8rem;
+
+  @include media(">=m-s") {
+    font-size: 1.7rem;
+
+    padding: 1rem;
+  }
+
+  @include media(">=m") {
+    font-size: 2rem;
+  }
+
+  @include media(">=t-m") {
+    font-size: 1.8rem;
+
+    padding: 1.3rem;
+  }
+
+  @include media(">=t") {
+    font-size: 2rem;
+
+    padding: 1.5rem;
+  }
+
+  @include media(">=l") {
+    font-size: 2.1rem;
+
+    padding: 1.7rem;
+  }
+}
+
+/* Hamburger
+========================================================================== */
+.c-btn--hamburger {
+  transform: rotate(0deg);
+
+  transition: transform 0.5s ease-in-out;
+
+  width: 6rem;
+  height: 3.7rem;
+}
+
+.c-btn--hamburger {
+  span {
+    display: block;
+    position: absolute;
+    left: 0;
+
+    opacity: 1;
+    transform: rotate(0deg);
+
+    transition: 0.25s ease-in-out;
+
+    height: 0.6rem;
+    width: 100%;
+
+    background-color: $color-white;
+
+    border-radius: 0.9rem;
+  }
+
+  &.c-btn--hamburger-sticky {
+    span {
+      background-color: $color-black;
+    }
+  }
+}
+
+.c-btn--hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.c-btn--hamburger span:nth-child(2),
+.c-btn--hamburger span:nth-child(3) {
+  top: 1.5rem;
+}
+
+.c-btn--hamburger span:nth-child(4) {
+  top: 3rem;
+}
+
+.c-btn--hamburger.is-active span:nth-child(1) {
+  top: 1.8rem;
+  left: 50%;
+
+  width: 0%;
+}
+
+.c-btn--hamburger.is-active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.c-btn--hamburger.is-active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.c-btn--hamburger.is-active span:nth-child(4) {
+  top: 1.8rem;
+  left: 50%;
+
+  width: 0%;
+}

@@ -1,0 +1,157 @@
+.f-form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.f-form__inputs {
+  @include media(">=m") {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+
+    .f-form__input {
+      flex-basis: 49.5%;
+    }
+  }
+}
+
+.f-form__input,
+.f-form__textarea {
+  border-radius: $radius;
+  border: 1px solid rgba($color-gray, 0.5);
+
+  font-size: 1.6rem;
+
+  padding: 1rem;
+
+  @include media(">=m-s") {
+    font-size: 1.7rem;
+  }
+
+  @include media(">=m") {
+    font-size: 2rem;
+
+    padding: 1.2rem;
+  }
+
+  @include media(">=t-m") {
+    border: none;
+
+    font-size: 1.8rem;
+
+    padding: 1.3rem;
+  }
+
+  @include media(">=t") {
+    font-size: 2rem;
+
+    padding: 1.5rem;
+  }
+
+  @include media(">=l") {
+    font-size: 2.1rem;
+
+    padding: 1.7rem;
+  }
+}
+
+.f-form__textarea {
+  width: 100%;
+  min-height: 8rem;
+  max-height: 12rem;
+  margin-top: 1rem;
+
+  @include media(">=m-s") {
+    min-height: 10rem;
+    max-height: 14rem;
+  }
+
+  @include media(">=m") {
+    min-height: 14rem;
+    max-height: 18rem;
+  }
+
+  @include media(">=t-m") {
+    min-height: 15rem;
+    max-height: 17rem;
+  }
+
+  @include media(">=t") {
+    min-height: 16rem;
+    max-height: 18rem;
+  }
+
+  @include media(">=l") {
+    min-height: 17rem;
+    max-height: 19rem;
+  }
+}
+
+.f-form__button {
+  border-radius: $radius;
+
+  text-align: center;
+
+  margin-top: 1rem;
+  width: 49%;
+
+  cursor: pointer;
+  @include media(">=m") {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Request Quote Form
+========================================================================== */
+
+.f-form--request {
+  max-width: 350px;
+
+  @include media(">=m-s") {
+    max-width: 420px;
+  }
+
+  @include media(">=m") {
+    max-width: 465px;
+  }
+
+  @include media(">=t-m") {
+    max-width: 500px;
+
+    flex-direction: row;
+    align-items: center;
+
+    .f-form__button {
+      width: 60%;
+      margin-top: 0;
+      margin-left: 1.5rem;
+    }
+  }
+
+  @include media(">=t") {
+    max-width: 550px;
+
+    .f-form__button {
+      width: 65%;
+      margin-left: 2rem;
+    }
+  }
+
+  @include media(">=l") {
+    max-width: 580px;
+  }
+}
+
+.f-form--contact {
+  .f-form__input {
+    &:first-of-type {
+      margin-bottom: 1rem;
+      @include media(">=m") {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

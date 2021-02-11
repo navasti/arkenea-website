@@ -1,0 +1,166 @@
+/* Font weights
+   ========================================================================== */
+.u-font-bold {
+  font-weight: bold;
+}
+
+/* Text aligned
+   ========================================================================== */
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-center {
+  text-align: center;
+
+  .o-image,
+  .c-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-justify {
+  text-align: justify;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-underline {
+  text-decoration: underline;
+}
+
+.u-hidden {
+  display: none;
+}
+
+.u-block {
+  display: block;
+}
+
+/* Flexbox utilises
+   ========================================================================== */
+.u-align-items-center {
+  align-items: center;
+}
+
+.u-justify-content-center {
+  justify-content: center;
+}
+
+.u-justify-content-between {
+  justify-content: space-between;
+}
+
+.u-adapt {
+  flex: 1;
+}
+
+.u-grow {
+  flex-grow: 1;
+}
+
+.u-non-grow {
+  flex-grow: 0;
+}
+
+.u-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.u-wrap {
+  flex-wrap: wrap;
+}
+
+@each $name, $value in $breakpoints {
+  @include media("<=#{$name}") {
+    .u-hidden\@#{$name} {
+      display: none;
+    }
+
+    .u-block\@#{$name} {
+      display: none;
+    }
+
+    .u-adapt\@#{$name} {
+      flex: 1;
+    }
+
+    .u-non-grow\@#{$name} {
+      flex-grow: 0;
+    }
+
+    .u-no-wrap\@#{$name} {
+      flex-wrap: nowrap;
+    }
+
+    .u-wrap\@#{$name} {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* Colors
+   ========================================================================== */
+@each $pallet, $value in $scotch-colors {
+  @each $name in $value {
+    $i: index($value, $name);
+
+    .u-paint-#{$pallet}-#{$i} {
+      color: #{$name};
+      fill: #{$name};
+    }
+  }
+}
+
+/* Spaces for the grid
+   ========================================================================== */
+@for $i from 1 through 15 {
+  .u-space-h-#{$i} {
+    margin-left: -($base-gap * $i);
+    margin-right: -($base-gap * $i);
+
+    > .l-grid__item {
+      padding-left: $base-gap * $i;
+      padding-right: $base-gap * $i;
+    }
+  }
+
+  .u-space-v-#{$i} {
+    margin-bottom: -($base-gap * $i);
+
+    > .l-grid__item {
+      margin-bottom: $base-gap * $i;
+    }
+  }
+}
+
+@each $name, $value in $breakpoints {
+  @include media("<=#{$name}") {
+    @for $i from 1 through 15 {
+      .u-space-h-#{$i}\@#{$name} {
+        margin-left: -($base-gap * $i);
+        margin-right: -($base-gap * $i);
+
+        > .l-grid__item {
+          padding-left: $base-gap * $i;
+          padding-right: $base-gap * $i;
+        }
+      }
+
+      .u-space-v-#{$i}\@#{$name} {
+        margin-bottom: -($base-gap * $i);
+
+        > .l-grid__item {
+          margin-bottom: $base-gap * $i;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.t-content {
+  ol,
+  ul {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  ol,
+  ul {
+    @include reset-list;
+
+    li {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Homepage Content
+========================================================================== */
+
+.t-content--homepage {
+  font-size: 1.5rem;
+
+  p {
+    margin: 1rem 0;
+
+    &:not(:last-child) {
+      margin-top: 0;
+    }
+  }
+
+  @include media(">=m-s") {
+    font-size: 1.8rem;
+  }
+
+  @include media(">=m") {
+    font-size: 2rem;
+
+    p {
+      margin: 1.5rem 0;
+
+      &:not(:last-child) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include media(">=t-m") {
+    font-size: 2.2rem;
+  }
+
+  @include media(">=t") {
+    font-size: 2.4rem;
+
+    p {
+      margin: 2rem 0;
+
+      &:not(:last-child) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include media(">=l") {
+    font-size: 2.8rem;
+
+    p {
+      margin: 2.2rem 0;
+
+      &:not(:last-child) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* Card Content
+========================================================================== */
+
+.t-content--card {
+  p {
+    color: rgba($color-black, 0.5);
+
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+
+    margin: 1rem 0;
+
+    @include media(">=m-s") {
+      font-size: 2rem;
+    }
+
+    @include media(">=m") {
+      font-size: 2.1rem;
+    }
+
+    @include media(">=t-m") {
+      font-size: 1.8rem;
+    }
+
+    @include media(">=t") {
+      font-size: 2rem;
+    }
+
+    @include media(">=l") {
+      font-size: 2.1rem;
+    }
+  }
+
+  a {
+    font-size: 1.7rem;
+
+    @include media(">=m-s") {
+      font-size: 1.9rem;
+    }
+
+    @include media(">=t-m") {
+      font-size: 2rem;
+    }
+
+    @include media(">=t-m") {
+      font-size: 1.7rem;
+    }
+
+    @include media(">=t") {
+      font-size: 1.9rem;
+    }
+
+    @include media(">=l") {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Slide Content
+========================================================================== */
+
+.t-content--slide {
+  color: rgba($color-white, 0.8);
+
+  text-align: center;
+
+  max-width: $size-inner;
+
+  p {
+    font-size: 1.6rem;
+
+    margin: 1rem 0;
+
+    @include media(">=m-s") {
+      font-size: 1.7rem;
+    }
+
+    @include media(">=m") {
+      font-size: 1.8rem;
+    }
+
+    @include media(">=t") {
+      font-size: 2.3rem;
+
+      margin: 1.8rem 0;
+    }
+
+    @include media(">=l") {
+      font-size: 2.5rem;
+
+      margin: 2.5rem 0;
+    }
+  }
+}
+
+/* Contact Content
+========================================================================== */
+
+.t-content--contact {
+  p {
+    color: rgba($color-black, 0.5);
+
+    text-transform: uppercase;
+    font-weight: 600;
+
+    @include media(">=m-s") {
+      font-size: 1.9rem;
+    }
+
+    @include media(">=m") {
+      font-size: 2.3rem;
+
+      margin-bottom: 2rem;
+    }
+
+    @include media(">=t-m") {
+      text-align: right;
+
+      font-size: 1.9rem;
+    }
+
+    @include media(">=t") {
+      font-size: 2.1rem;
+    }
+
+    @include media(">=l") {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+/* Footer Content
+========================================================================== */
+
+.t-content--footer {
+  p {
+    margin: 0.2rem 0;
+
+    text-align: center;
+    font-size: 1.2rem;
+
+    @include media(">=m-s") {
+      font-size: 1.4rem;
+    }
+
+    @include media(">=t-m") {
+      font-size: 1.7rem;
+    }
+  }
+}
