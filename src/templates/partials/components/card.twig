@@ -1,0 +1,9 @@
+{% for card in data.cards %}
+  <article class="c-card">
+    <img class="c-card__image o-image--fit" src="{{ card.image }}" alt="article-image">
+    <div class="c-card__description t-content t-content--card">
+      <p>{{ card.description }}</p>
+      <a href="#">Continue reading...</a>
+    </div>
+  </article>
+{% endfor %}

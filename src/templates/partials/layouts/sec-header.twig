@@ -1,0 +1,24 @@
+<header class="l-header">
+    <div class="l-inner l-header__inner">
+        <div class="l-header__logo">
+            <a href="/" class="c-logo c-logo--main">Arkenea</a>
+        </div>
+
+        <div class="l-header__hamburger">
+            <div class="c-btn c-btn--hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="l-header__nav">
+            {% include "../components/menu.twig" with {
+                data: {
+                    items: navItems
+                }
+            } %}
+        </nav>
+    </div>
+</header>

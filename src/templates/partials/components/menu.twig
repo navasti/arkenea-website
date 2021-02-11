@@ -1,0 +1,11 @@
+<div class="c-nav">
+    <ul class="c-nav__list">
+        {% for item in data.items %}
+            <li class="c-nav__item">
+                <a href="{{ item.href }}" class="c-nav__label">
+                    {{ item.label }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

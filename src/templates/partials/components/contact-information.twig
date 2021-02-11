@@ -1,0 +1,8 @@
+{% for info in data.information %}
+  <header class="t-header">
+    <h5 class="t-head t-head--h5">{{ info.heading }}</h5>
+  </header>
+  <div class="t-content t-content--contact">
+    <p>{{ info.content }}</p>
+  </div>
+{% endfor %}

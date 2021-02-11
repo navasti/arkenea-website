@@ -1,0 +1,24 @@
+<section class="l-sec-contact l-sec">
+    <div class="l-inner l-sec-contact__inner">
+        <header class="i-sec-contact__header t-header">
+            <h3 class="t-head t-head--h3">Tell us about your requirement</h3>
+        </header>
+
+        <div class="l-sec-contact__details">
+            <div class="l-sec-contact__form">
+                <header class="t-header">
+                    <h4 class="t-head t-head--h4">Contact us</h4>
+                </header>
+                {% include "../components/form.twig" %}
+            </div>
+
+            <div class="l-sec-contact__information">
+                {% include "../components/contact-information.twig" with {
+                    data: {
+                        information: contactInformation
+                    }
+                } %}
+            </div>
+        </div>
+    </div>
+</section>

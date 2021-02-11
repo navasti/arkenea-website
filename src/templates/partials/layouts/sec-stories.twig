@@ -1,0 +1,17 @@
+<section class="l-sec-stories l-sec">
+    <div class="l-inner l-sec-strories__inner">
+        <header class="t-header">
+            <h2 class="t-head t-head--h2">Our success stories</h2>
+        </header>
+
+        <div class="l-sec-stories__separator"></div>
+        
+        <div class="l-sec-stories__cards">
+            {% include "../components/card.twig" with {
+                data: {
+                    cards: cards
+                }
+            } %}
+        </div>
+    </div>
+</section>

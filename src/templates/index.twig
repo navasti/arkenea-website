@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block home %}
+    {% include "./partials/layouts/sec-header.twig" %}
+    {% include "./partials/layouts/sec-home-content.twig" %}
+{% endblock %}
+
+{% block main %}
+    {% include "./partials/layouts/sec-stories.twig" %}
+    {% include "./partials/layouts/sec-slides.twig" %}
+    {% include "./partials/layouts/sec-contact.twig" %}
+{% endblock %}
