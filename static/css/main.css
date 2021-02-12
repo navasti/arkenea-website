@@ -1306,6 +1306,7 @@ select::-ms-expand {
       margin: 0; } }
 
 .l-homepage {
+  min-height: 600px;
   height: 100vh;
   margin-bottom: 5rem;
   display: -webkit-box;
